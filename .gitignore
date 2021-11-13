@@ -1,3 +1,5 @@
 .DS_Store
 YelpAPIConfig.py
 restaurants_top2020
+config.py
+datawarehouse_venv
