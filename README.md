@@ -17,12 +17,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -92,14 +86,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Apache Kafka](https://kafka.apache.org/quickstart )
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -108,20 +96,23 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Before beginning, you need to register for a Twitter Developer Account since we will need to access the Twitter API. A quickstart to do this can be found at: https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api
+
+<br />
+You will need to have: Consumer Key, Consumer Secret, Access Token, Access Token Secret
+
+
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+There are some libraries that will need to be installed that do not come with the standard
+* tweepy
+* confluent_kafka
+* pyspark
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get API from [https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api)
 2. Clone the repo
    ```sh
    git clone https://github.com/github_username/repo_name.git
