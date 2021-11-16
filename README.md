@@ -78,13 +78,16 @@ There are some libraries that will need to be installed that do not come with th
    ```sh
    git clone https://github.com/EthanTGo/DataWarehouseProject
    ```
-3. Install NPM packages
+3. Install requirements.txt Python packages
    ```sh
-   npm install
+   pip install -r requirements.txt
    ```
-4. Enter your API in `config.js`
+4. Create a file on the code folder called `config.py` and put these variables from your Twitter Developer Account in `config.py`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+  TWITTER_CONSUMER_KEY = ''
+  TWITTER_CONSUMER_SECRET = ''
+  TWITTER_ACCESS_TOKEN = ''
+  TWITTER_ACCESS_TOKEN_SECRET = ''
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
