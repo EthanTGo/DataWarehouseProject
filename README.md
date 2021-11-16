@@ -61,9 +61,10 @@ You will need to have: Consumer Key, Consumer Secret, Access Token, Access Token
 
 ### Prerequisites
 
-There are some libraries that will need to be installed that do not come with the standard, these libraries are specified on the requirements.txt file and can be installed by running ```sh
-  pip install -r requirements.txt
- ```
+There are some libraries that will need to be installed that do not come with the standard, these libraries are specified on the requirements.txt file and can be installed by running 
+   ```sh
+   pip install -r requirements.txt
+   ```
 * tweepy
 * confluent_kafka
 * pyspark
@@ -80,6 +81,7 @@ There are some libraries that will need to be installed that do not come with th
    ```sh
    pip install -r requirements.txt
    ```
+
 4. Create a file on the code folder called `config.py` and put these variables from your Twitter Developer Account in `config.py`
    ```py
       TWITTER_CONSUMER_KEY = ''
