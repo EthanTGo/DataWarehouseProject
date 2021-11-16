@@ -134,9 +134,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Duc Nguyen
-Ethan Go - ethango@bu.edu
-Joy Shi 
+* Duc Nguyen
+* Ethan Go - ethango@bu.edu
+* Joy Shi 
 
 Project Link: [https://github.com/EthanTGo/DataWarehouseProject](https://github.com/EthanTGo/DataWarehouseProject)
 
