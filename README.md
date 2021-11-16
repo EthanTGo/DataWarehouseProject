@@ -83,11 +83,11 @@ There are some libraries that will need to be installed that do not come with th
    pip install -r requirements.txt
    ```
 4. Create a file on the code folder called `config.py` and put these variables from your Twitter Developer Account in `config.py`
-   ```js
-  TWITTER_CONSUMER_KEY = ''
-  TWITTER_CONSUMER_SECRET = ''
-  TWITTER_ACCESS_TOKEN = ''
-  TWITTER_ACCESS_TOKEN_SECRET = ''
+   ```py
+      TWITTER_CONSUMER_KEY = ''
+      TWITTER_CONSUMER_SECRET = ''
+      TWITTER_ACCESS_TOKEN = ''
+      TWITTER_ACCESS_TOKEN_SECRET = ''
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
