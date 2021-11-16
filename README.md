@@ -34,8 +34,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+For this project, we are going to perform a Stream Analysis of Twitter Data by implementing frameworks such as Apache Kafka, Apache Spark and adding it to a database and a visualization tools. Our Proof of Concepts is that of a Food Company Analyzing data about food that are found on Twitter. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -105,20 +104,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-    - [] Nested Feature
-
-See the [open issues](https://github.com/EthanTGo/DataWarehouseProject/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -158,15 +143,6 @@ Project Link: [https://github.com/EthanTGo/DataWarehouseProject](https://github.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
