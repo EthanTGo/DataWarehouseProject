@@ -27,42 +27,12 @@
 <h3 align="center">CS 689 Data Warehouse Project</h3>
 
   <p align="center">
-    This is a starting template for the CS 689 Group Project for Group 14. The following people are members of the group: Duc Nguyen, Joy Shi and Ethan Go
+    This is CS 689 Group Project for Group 14. The following people are members of the group: Duc Nguyen, Joy Shi and Ethan Go. This Project is an implementation of a Data Stream Architecture Combined with a Data Warehouse Systems. We are using Tools such as Apache Kafka, Apache Spark and feeding the data into a Data Mart before finally processing it into a visualization tools to answer questions regarding popular foods in the Greater Boston Area.
     <br />
     <a href="https://github.com/EthanTGo/DataWarehouseProject"><strong>Explore the docs »</strong></a>
     <br />
   </p>
 </div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -77,7 +47,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [Apache Kafka](https://kafka.apache.org/quickstart )
+* [Apache Kafka](https://kafka.apache.org/quickstart)
+* [Apache Spark](https://spark.apache.org/)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -92,8 +63,6 @@ Before beginning, you need to register for a Twitter Developer Account since we 
 <br />
 You will need to have: Consumer Key, Consumer Secret, Access Token, Access Token Secret
 
-
-
 ### Prerequisites
 
 There are some libraries that will need to be installed that do not come with the standard
@@ -104,9 +73,10 @@ There are some libraries that will need to be installed that do not come with th
 ### Installation
 
 1. Get API from [https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api)
+
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/EthanTGo/DataWarehouseProject
    ```
 3. Install NPM packages
    ```sh

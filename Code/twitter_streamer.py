@@ -1,9 +1,6 @@
 '''
 This Python File contains the code to begin streaming using the Tweepy Stream API 
-
-
 In combination, We are also using Apache Kafka to Manage the Incoming Stream and Filter Data
-
 '''
 # Import Libraries 
 import datetime
@@ -11,8 +8,6 @@ import time
 
 # Install the following with pip if haven't
 import tweepy
-import numpy as np
-import pandas as pd
 from kafka import KafkaProducer
 
 # config.py that contains the consumer key and access token
@@ -55,6 +50,8 @@ class ListernerTS(tweepy.Stream):
 
     def on_data(self, raw_data):
         # On Data, send to the Kafka Producer for topic
+        time.sleep(1)
+        print(raw_data)
         producer.send(topic_name, raw_data)
         return True 
 
