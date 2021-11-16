@@ -28,16 +28,12 @@
 
   <p align="center">
     This is CS 689 Group Project for Group 14. The following people are members of the group: Duc Nguyen, Joy Shi and Ethan Go. This Project is an implementation of a Data Stream Architecture Combined with a Data Warehouse Systems. We are using Tools such as Apache Kafka, Apache Spark and feeding the data into a Data Mart before finally processing it into a visualization tools to answer questions regarding popular foods in the Greater Boston Area.
-    <br />
-    <a href="https://github.com/EthanTGo/DataWarehouseProject"><strong>Explore the docs »</strong></a>
-    <br />
   </p>
 </div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
 
@@ -65,7 +61,9 @@ You will need to have: Consumer Key, Consumer Secret, Access Token, Access Token
 
 ### Prerequisites
 
-There are some libraries that will need to be installed that do not come with the standard
+There are some libraries that will need to be installed that do not come with the standard, these libraries are specified on the requirements.txt file and can be installed by running ```sh
+  pip install -r requirements.txt
+ ```
 * tweepy
 * confluent_kafka
 * pyspark
