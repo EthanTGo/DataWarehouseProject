@@ -39,10 +39,9 @@ if __name__ == '__main__':
     )
 
     for msg in consumer:
-        sleep(5)
+        
         if(filter_tweets(msg.value)):
             tmp = nltk.word_tokenize(msg.value['text'])
             producer.send(cleaned_topic_name,tmp)
             print('Data sent to Twitter_Stream_Cleaned')
-            sleep(.5)
 

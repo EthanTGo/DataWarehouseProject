@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import explode
-from pyspark.sql.functions import split
+import pyspark.sql.functions as f
+
 
 '''
 To run, please make sure you have the appropriate Spark and Scala version
@@ -16,7 +16,7 @@ spark = SparkSession \
     .appName("StructuredNetworkWordCount") \
     .getOrCreate()
 
-# Use this code, so that when you run spark-submit
+ # Use this code, so that when you run spark-submit
 spark.sparkContext.setLogLevel("WARN")
 
 inputDF = spark \
@@ -24,15 +24,22 @@ inputDF = spark \
   .format("kafka") \
   .option("kafka.bootstrap.servers", "localhost:9092") \
   .option("subscribe", "Twitter_Stream_Cleaned") \
-  .load()\
-  .selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)") \
-.writeStream \
-.outputMode("append") \
-.format("console") \
-.start()
+  .load()
 
 
-inputDF.awaitTermination()
+wordDF = inputDF.select('value', 'timestamp').withColumn('word', f.explode(f.split(f.col('value'), ' ')))\
+    .withWatermark("timestamp", "1 seconds")\
+    .groupBy('timestamp','word')\
+    .count()\
 
+concatDF = wordDF.withColumnRenamed('count', 'counter')
 
+concatDF2 = concatDF.withColumn('value', f.concat(concatDF.word, concatDF.counter))
 
+outputDf = concatDF2\
+    .writeStream \
+    .format("kafka").option("kafka.bootstrap.servers", "localhost:9092")\
+    .option("checkpointLocation", "checkpoint_kafka/") \
+    .option("topic", "WordCount") \
+    .start()\
+    .awaitTermination()

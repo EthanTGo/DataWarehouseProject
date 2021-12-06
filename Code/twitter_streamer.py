@@ -43,6 +43,7 @@ class TwitterStreamer():
         location = This represents the bounding box of Massachusetts
         '''
         while True:
+            time.sleep(0.5)
             stream = ListernerTS(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET,TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET)
             stream.filter(track=['Restaurants', 'Food', 'Dessert'], stall_warnings=True,languages=['en'], locations=[-73.508142,41.237964,-69.928393,42.886589])
 
@@ -50,8 +51,8 @@ class ListernerTS(tweepy.Stream):
 
     def on_data(self, raw_data):
         # On Data, send to the Kafka Producer for topic
-        time.sleep(1)
         print(raw_data)
+        time.sleep(0.5)
         producer.send(topic_name, raw_data)
         return True 
 
